@@ -46,6 +46,7 @@
 
 .links i {
     font-size: 50px;
+    color: black;
     transition: transform 0.3s, scale 0.3s;
 }
 

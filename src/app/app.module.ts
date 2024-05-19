@@ -1,30 +1,26 @@
 // app.module.ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRouting } from './app.routes';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component'; 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 //my components
-import { HeaderComponent } from './components/header/header.component';
+//import { HeaderComponent } from './components/header/header.component';
 
 //my pages
-import { HomeComponent } from './pages/home/home.component';
+//import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    //components
-    HeaderComponent,
-
-    //pages
-    HomeComponent,
+    routingComponents,
   ],
 
   imports: [
     BrowserModule,
-    AppRouting,
-    FontAwesomeModule
+    AppRoutingModule,
+    FontAwesomeModule,
   ],
   
   providers: [],

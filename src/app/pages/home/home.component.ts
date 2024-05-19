@@ -4,12 +4,10 @@ import { faPersonRunning, faPersonFalling, faPersonHiking, faPersonBiking,
         faPersonSwimming
        } from '@fortawesome/free-solid-svg-icons';
 
-import { HeaderComponent } from '../../components/header/header.component';
-
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FontAwesomeModule, HeaderComponent],
+  imports: [FontAwesomeModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
