@@ -3,13 +3,17 @@
     margin: 0;
 }
 
+.home {
+    background-color: rgb(0, 204, 255);
+}
+
 .info {
     display: flex;
     justify-content: space-between;
 }
 
 .left {
-    background-color: purple;
+    /*background-color: purple;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,14 +22,93 @@
 }
 
 .greeting {
-    background-color: green;
+    /*background-color: green;*/
     width: 450px;
     height: 200px;
     margin-top: 100px;
 }
 
+.greeting h1 {
+    font-size: 80px;
+}
+
+.greeting p {
+    font-size: 25px;
+}
+
+.links {
+    /*background-color: red;*/
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    height: 50px;
+}
+
+.links i {
+    font-size: 50px;
+    transition: transform 0.3s, scale 0.3s;
+}
+
+.links i:hover {
+    scale: 1.2;
+    cursor: pointer;
+}
+
+.floor {
+    background-color: purple;
+    width: 450px;
+    height: 2px;
+    margin-top: 200px;
+}
+
 .right {
-    background-color: red;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     height: 650px;
+}
+
+.right img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.person-falling {
+    position: absolute;
+    font-size: 35px;
+    left: 800px;
+    bottom: 300px;
+}
+
+.person-hiking {
+    position: absolute;
+    font-size: 35px;
+    right: 500px;
+    top: 88px;
+}
+
+.person-running {
+    position: absolute;
+    font-size: 35px;
+    left: 200px;
+    bottom: 94px;
+}
+
+.person-biking {
+    position: absolute;
+    font-size: 35px;
+    left: 450px;
+    bottom: 94px;
+}
+
+.person-swimming {
+    position: absolute;
+    font-size: 35px;
+    right: 200px;
+    top: 550px;
 }

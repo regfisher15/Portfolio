@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRouting } from './app.routes';
 import { AppComponent } from './app.component'; 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 //my components
 import { HeaderComponent } from './components/header/header.component';
@@ -22,7 +23,8 @@ import { HomeComponent } from './pages/home/home.component';
 
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+    FontAwesomeModule
   ],
   
   providers: [],
