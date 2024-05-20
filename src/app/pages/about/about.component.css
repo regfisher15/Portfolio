@@ -23,12 +23,12 @@
     z-index: 2;
 }
 
-.left {
+.intro .left {
     margin-right: auto;
     width: 50%;
 }
 
-.left img {
+.intro .left img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -36,20 +36,20 @@
 }
 
 
-.right {
+.intro .right {
     background: rgb(0, 204, 255);
     margin-left: auto;
     width: 50%;
 }
 
-.right h1 {
+.intro .right h1 {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 
-.right p {
+.intro .right p {
     /*background-color: red;*/
     font-size: 30px;
     width: 500px;
@@ -60,11 +60,168 @@
 .hobbies {
     background-color: rgb(204, 59, 204);
     width: 100%;
-    height: 500px;
+    height: auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hobbies h1 {
     font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.content-creator {
+    background-color: rgb(204, 59, 204);
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+.content-creator .left {
+    /*background-color: blue;*/
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-creator .left h2 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.content-creator .left p {
+    font-size: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.content-creator .right {
+    /*background-color: blue;*/
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-creator .right .pics {
+    /*background-color: green;*/
+    width: 100%;
+    height: 100%;
+}
+
+.content-creator .right .pics img {
+    width: 200px;
+    height: 400px;
+    margin-right: 40px;
+}
+
+.sports {
+    background-color:rgb(0, 204, 255);
+    display: flex;
+    width: 100%;
+    height: 500px;
+}
+
+.sports .left {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports .left .pics {
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+}
+
+.sports .left .pics img {
+    width: 200px;
+    height: 350px;
+    margin-right: 50px;
+    object-fit: cover;
+}
+
+.sports .right {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sports .right h2 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.sports .right p {
+    font-size: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.trivia {
+    background-color: rgb(204, 59, 204);
+    display: flex;
+    width: 100%;
+    height: 400px;
+    padding-bottom: 50px;
+}
+
+.trivia .left {
+    /*background-color: blue;*/
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.trivia .left h2 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+
+.trivia .left p {
+    font-size: 20px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.trivia .right {
+    /*background-color: blue;*/
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trivia .right .pics {
+    /*background-color: green;*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trivia .right .pics img {
+    width: 300px;
+    height: 300px;
+    margin-right: 40px;
 }
