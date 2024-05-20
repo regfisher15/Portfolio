@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.about {
+    background-color: rgb(0, 204, 255);
+}
+
+.intro {
+    display: flex;
+    height: 600px;
+    z-index: 2;
+}
+
+.overlay {
+    background: linear-gradient(to left, rgb(0, 204, 255), transparent);
+    position: absolute;
+    width: 50%;
+    height: 600px;
+    /*margin-left: 463px;*/
+    opacity: 1.0;
+    z-index: 2;
+}
+
+.left {
+    margin-right: auto;
+    width: 50%;
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+
+.right {
+    background: rgb(0, 204, 255);
+    margin-left: auto;
+    width: 50%;
+}
+
+.right h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.right p {
+    /*background-color: red;*/
+    font-size: 30px;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.hobbies {
+    background-color: rgb(204, 59, 204);
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.hobbies h1 {
+    font-size: 50px;
+}
