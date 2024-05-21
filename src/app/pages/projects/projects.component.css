@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.projects {
+    background-color: rgb(0, 204, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tv-tracker {
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.tv-tracker .left{
+    background-color: blue;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-tracker .left p {
+    font-size: 20px;
+    width: 400px;
+}
+
+.tv-tracker .right {
+    background-color: purple;
+    width: 50%;
+    height: 300px;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tv-tracker .right .scrollable-row {
+    background-color: red;
+    width: 100%;
+    height: 250px;
+}
