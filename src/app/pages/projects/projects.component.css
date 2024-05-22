@@ -12,14 +12,14 @@
 
 .tv-tracker {
     width: 100%;
-    height: 300px;
+    height: 350px;
     display: flex;
 }
 
 .tv-tracker .left{
-    background-color: blue;
+    /*background-color: blue;*/
     width: 50%;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,17 +32,122 @@
 }
 
 .tv-tracker .right {
-    background-color: purple;
     width: 50%;
-    height: 300px;
+    height: 350px;
     margin-left: auto;
     display: flex;
+    align-items: center;
+}
+
+#tv-scroll-left {
+    position: absolute;
+    font-size: 35px;
+    left: 700px;
+}
+
+#tv-scroll-right {
+    position: absolute;
+    font-size: 35px;
+    right: 20px;
+}
+
+#tv-scroll-left:hover {
+    scale: 1.2;
+}
+
+#tv-scroll-right:hover {
+    scale: 1.2;
+}
+
+.tv-tracker .right .scrollable-row {
+   /* background-color: red;*/
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap;
+}
+
+.tv-tracker .right .scrollable-row img {
+    width: 690px;
+    height: auto;
+    margin-right: 78px;
+}
+
+.scrollable-row::-webkit-scrollbar {
+    display: none;
+  }
+
+/*Spotify ***********************************************************************/
+.spotify-react {
+    background-color: rgb(204, 59, 204);
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+.spotify-react .left{
+    /*background-color: blue;*/
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.tv-tracker .right .scrollable-row {
-    background-color: red;
-    width: 100%;
-    height: 250px;
+.spotify-react .left p {
+    font-size: 20px;
+    width: 400px;
 }
+
+.spotify-react .right {
+    width: 50%;
+    height: 350px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+#spotify-scroll-left {
+    position: absolute;
+    font-size: 35px;
+    left: 700px;
+}
+
+#spotify-scroll-right {
+    position: absolute;
+    font-size: 35px;
+    right: 20px;
+}
+
+#spotify-scroll-left:hover {
+    scale: 1.2;
+}
+
+#spotify-scroll-right:hover {
+    scale: 1.2;
+}
+
+.spotify-react .right .spotify-scrollable-row {
+   /* background-color: red;*/
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    white-space: nowrap;
+}
+
+.spotify-react .right .spotify-scrollable-row img {
+    width: 690px;
+    height: auto;
+    margin-right: 78px;
+}
+
+.spotify-scrollable-row::-webkit-scrollbar {
+    display: none;
+  }

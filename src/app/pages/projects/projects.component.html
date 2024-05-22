@@ -11,8 +11,40 @@
         </div>
 
         <div class="right">
-            <div class="scrollable-row">
+            <div class="tv-scroll-buttons">
+                <i id="tv-scroll-left" class="fa-solid fa-circle-arrow-left" (click)="scrollLeft()"></i>
+                <i id="tv-scroll-right" class="fa-solid fa-circle-arrow-right" (click)="scrollRight()"></i>
+            </div>
 
+            <div class="scrollable-row" #scrollableRow>
+                <img src="assets/images/tv-tracker1.png" alt="TV">
+                <img src="assets/images/tv-tracker2.png" alt="TV">
+                <img src="assets/images/tv-tracker3.png" alt="TV">
+                <img src="assets/images/tv-tracker4.png" alt="TV">
+            </div>
+        </div>
+    </div>
+
+    <div class="spotify-react">
+        <div class="left">
+            <h2>Spotify Website</h2>
+            <p>This website tracks and recommends tv shows and programs for a user. It allows you to create an 
+                account and add shows to your profile through the use of icons. This was a capstone project I did 
+                with a couple of my classmates, and it taught me a lot about web development and deployment!
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="spotify-scroll-buttons">
+                <i id="spotify-scroll-left" class="fa-solid fa-circle-arrow-left" (click)="spotifyScrollLeft()"></i>
+                <i id="spotify-scroll-right" class="fa-solid fa-circle-arrow-right" (click)="spotifyScrollRight()"></i>
+            </div>
+
+            <div class="spotify-scrollable-row" #spotifyScrollableRow>
+                <img src="assets/images/spotify1.png" alt="TV">
+                <img src="assets/images/spotify2.png" alt="TV">
+                <img src="assets/images/spotify3.png" alt="TV">
+                <img src="assets/images/spotify4.png" alt="TV">
             </div>
         </div>
     </div>
