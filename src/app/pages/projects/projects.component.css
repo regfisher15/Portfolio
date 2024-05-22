@@ -73,6 +73,9 @@
 .tv-tracker .right .scrollable-row img {
     width: 690px;
     height: auto;
+}
+
+.scrollable-row img:not(:last-child) {
     margin-right: 78px;
 }
 
@@ -145,6 +148,9 @@
 .spotify-react .right .spotify-scrollable-row img {
     width: 690px;
     height: auto;
+}
+
+.spotify-scrollable-row img:not(:last-child) {
     margin-right: 78px;
 }
 
@@ -217,6 +223,9 @@
 .computer-graphics .right .graphics-scrollable-row img {
     width: 690px;
     height: auto;
+}
+
+.graphics-scrollable-row img:not(:last-child) {
     margin-right: 78px;
 }
 

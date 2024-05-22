@@ -41,3 +41,20 @@
     height: 25px;
     border-radius: 5px;
 }
+
+li a {
+    text-decoration: none;
+}
+
+ul li a.active {
+    background-color: rgb(204, 59, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; /* Make the active link bold */
+    color: black;
+    width: 75px;
+    height: 25px;
+    border-radius: 5px;
+    border-bottom: 2px solid black; 
+  }
