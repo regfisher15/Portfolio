@@ -11,6 +11,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class ProjectsComponent {
   @ViewChild('scrollableRow', { static: false }) scrollableRow!: ElementRef;
   @ViewChild('spotifyScrollableRow', { static: false }) spotifyScrollableRow!: ElementRef;
+  @ViewChild('graphicsScrollableRow', { static: false }) graphicsScrollableRow!: ElementRef;
 
   scrollAmount = 768;
 
@@ -37,6 +38,20 @@ export class ProjectsComponent {
 
   spotifyScrollRight() {
     this.spotifyScrollableRow.nativeElement.scrollBy({
+      left: this.scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  graphicsScrollLeft() {
+    this.graphicsScrollableRow.nativeElement.scrollBy({
+      left: -this.scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+  graphicsScrollRight() {
+    this.graphicsScrollableRow.nativeElement.scrollBy({
       left: this.scrollAmount,
       behavior: 'smooth'
     });
